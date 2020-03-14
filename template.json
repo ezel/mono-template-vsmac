@@ -1,0 +1,73 @@
+﻿{
+ "$schema": "http://json.schemastore.org/template",
+ "author": "ezel",
+ "classifications": [],
+ "description": "",
+ "name": "MonoGameDesktopGLApplication",
+ "defaultName": "MonoGameDesktopGLApplication",
+ "identity": "MyTemplate.MonoGameDesktopGLApplication.CSharp",
+ "groupIdentity": "MyTemplate.MonoGameDesktopGLApplication",
+ "tags": {
+   "language": "C#",
+   "type": "project",
+   "vsmac-category": "mytop/mysecond/mythird"
+ },
+ "shortName": "MonoGameDesktopGLApplication",
+ "sourceName": "MonoGameDesktopGLApplication",
+ "sources": [
+   {
+     "modifiers": [
+       {
+         "exclude": [
+           ".vs/**/*"
+         ]
+       }
+     ]
+   }
+ ],
+ "symbols":{
+   "guid1": {
+     "type": "generated",
+     "generator": "guid",
+     "replaces": "$guid1$"
+   },
+   "guid2": {
+     "type": "generated",
+     "generator": "guid",
+     "replaces": "$guid2$"
+   },
+   "year": {
+     "type": "generated",
+     "generator": "now",
+     "replaces": "$year$",
+     "parameters": {
+       "format": "yyyy"
+     }
+   },
+   "pjname": {
+     "type": "derived",
+     "valueSource": "name",
+     "valueTransform": "safe_name",
+     "replaces": "$projectname$"
+   },
+   "safepjname": {
+     "type": "derived",
+     "valueSource": "name",
+     "valueTransform": "lower_safe_namespace",
+     "replaces": "$safeprojectname$"
+   },
+   "myorg": {
+    "type": "generated",
+    "generator": "constant",
+    "parameters": {
+      "value":"ezel.canoe.indie"
+    },
+    "replaces":"$registeredorganization$"
+  }
+ },
+ "primaryOutputs": [
+   {
+     "path": "MonoGameDesktopGLApplication.csproj"
+   }
+ ]
+}
